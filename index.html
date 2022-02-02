@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family:'Outfit', sans-serif;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: hsl(217, 54%, 11%);
+      color: hsl(215, 51%, 70%);
+    }
+    .container{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+     width: 340px;
+     margin-top: 3rem;
+     background-color: hsl(216, 50%, 16%);
+     border-radius: 15px;
+    }
+    .img-container{
+      margin-top:1.25rem ;
+      border-radius: 10px;
+      transition: all 0.5s ease-in-out;
+      height: 300px;
+    }
+    .pic{
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    .svg{
+      display: flex;
+      align-items: center;
+      margin: auto;
+      position: relative;
+      top: -50%;
+      left: 9%;
+      transform: translate(-50%,-50%);
+      opacity: 0;
+    }
+    .img-container:hover{
+      background-color: hsl(178, 100%, 50%);
+    }
+    .img-container:hover .svg{
+      opacity: 1;
+    }
+    .img-container:hover .pic{
+      opacity: 0.4;
+    }
+    .content b{
+      color: white;
+      font-size: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+    .content b:hover{
+      color: hsl(178, 100%, 50%);
+    }
+    .content{
+      margin-top: 1rem;
+      max-width: 300px;
+      font-size: 15px;
+    }
+    .logo{
+      display: flex;
+      align-items: center;
+      width: 300px;
+      margin-bottom: 0.5rem;
+    }
+    .logo1{
+      display: flex;
+      align-items: center;
+      color: hsl(178, 100%, 50%); 
+    }
+    .logo2{
+      display: flex;
+      align-items: center;
+      position: relative;
+      left: 33%;
+      color: hsl(215, 51%, 70%);
+    }
+    .logo p{
+      margin: 0.5rem;
+    }
+    .creator{
+      display: flex;
+      align-items: center;
+      left: -10%;
+      width: 300px;
+      margin-bottom: 1.25rem;
+      margin-top: 0.4rem;
+    }
+    .creator p{
+      margin-left: 1rem;
+    }
+    .creator p span{
+      transition: all 0.3s ease-in-out;
+      color:white;
+    }
+    .creator p span:hover{
+      color: hsl(178, 100%, 50%);
+    }
+    .creator img{
+      width: 40px;
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+    hr{
+      width: 300px;
+      color: hsl(215, 51%, 70%);
+    }
+  
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="img-container">
+    <img src="images/image-equilibrium.jpg" alt="" class="pic">
+    <img src="./images/icon-view.svg" alt="" class="svg">
+  </div>
+  <div class="content">
+    <b>Equilibrium #3429</b>
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+  </div>
+  <div class="logo">
+    <div class="logo1">
+      <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+      <p>0.041 ETH</p>
+    </div>
+    <div class="logo2">
+      <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+      <p class="end">3 days left</p>
+    </div>
+  </div>
+  <hr>
+  <div class="creator">
+    <img src="images/image-avatar.png" alt="">
+    <p>Creation of <span>Jainish Chauhan</span></p>
+  </div>
+</div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/jainish-chauhan-288273221">Jainish Chauhan</a>.
+  </div>
+</body>
+</html>
